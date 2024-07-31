@@ -1,0 +1,15 @@
+:root{
+    --color-1: #9B0623;
+    --color-2: #D9A0AF;
+}
+
+
+/************************/
+/*        PROJECTS      */
+/************************/
+.projects .container-cards .expand:hover{
+    transition: background-color 1s, color 1s;
+    background-color: var(--color-2);
+    color: var(--color-1);
+    cursor: pointer;
+}

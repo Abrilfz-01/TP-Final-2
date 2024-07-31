@@ -1,0 +1,21 @@
+/************************/
+/*         HOME         */
+/************************/
+.container-home{
+    padding: 30px 5% 0 5%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.container-home .container-1 .download:hover{
+    transition: background-color 1s, color 1s;
+    background-color: #D9A0AF;
+    color: #9B0623;
+    cursor: pointer;
+}
+
+.container-home img{
+    width: 650px;
+    height: 480px;
+    margin-left: 50px;
+}

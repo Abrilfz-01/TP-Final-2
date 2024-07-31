@@ -1,0 +1,419 @@
+:root{
+    --color-1: #9B0623;
+    --color-2: #D9A0AF;
+    --color-3: #575757;
+    --color-4: #FFF1F4;
+    --color-5: #FFFFFF;
+}
+
+/************************/
+/*   RESPONSIVE 1440PX  */
+/************************/
+@media(max-width: 1440px){
+    /**/
+}
+
+
+/************************/
+/*   RESPONSIVE 1280PX  */
+/************************/
+@media(max-width: 1280px){
+    /**/
+}
+
+
+
+
+
+/************************/
+/*  RESPONSIVE 1024PX   */
+/************************/
+@media(max-width: 1024px){
+    .container-nav .nav-items{
+        margin-left: 20px;
+    }
+    /*Fin del responsive del NAVBAR*/
+
+    .container-home img{
+        width: 380px;
+        height: 500px;
+    }
+
+    .container-home .titulo-1{
+        font-size: 55px;
+    }
+
+    .container-home .titulo-2{
+        font-size: 65px;
+    }
+    /*Fin del responsive del HOME*/
+
+
+    .container-skills{
+        margin-left: 180px;
+    }
+    /*Fin del Responsive de SKILLS*/
+
+
+    .container-services .container-cards .sect-cards{
+        justify-content: center;
+        display: grid;
+        grid-template-columns: repeat(2, 350px);
+    }
+    /*Fin del responsive SERVICES*/
+
+
+    .footer .redes{
+        display: none;
+    }
+}
+
+
+
+
+
+/************************/
+/*   RESPONSIVE 768PX   */
+/************************/
+@media(max-width: 768px){
+    .container-nav .nav-items{
+        position: absolute;
+        margin-left: 0;
+        top: 77px;
+        left: 0;
+        background: var(--color-1);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: -webkit-fill-available;
+        transform: translateX(-100%);
+        transition: 0.3s ease all;
+    }
+
+    .nav-items.open{
+        transform: translateX(0) !important;
+    }
+
+    .container-nav .nav-items li a{
+        color: #FFFFFF;
+    }
+
+    .container-nav .nav-items li a::after{
+        display: none;
+    }
+
+    .container-nav .contactme{
+        display: none;
+    }
+
+    .nav-menu{
+        display: flex !important;
+        flex-direction: column;
+        margin-right: 60px;
+    }
+
+    .nav-menu span{
+        width: 30px;
+        height: 4px;
+        background: black;
+        margin-bottom: 5px;
+        border-radius: 2px;
+        transform-origin: 5px 0px;
+        transition: all 0.2s linear;
+    }
+
+    .nav-menu.open > span{
+        transform: rotate(45deg) translate(0px, 0px);
+    }
+
+    .nav-menu.open > span:nth-child(2){
+        display: none;
+    }
+
+    .nav-menu.open > span:nth-child(3){
+        transform: rotate(-45deg) translate(-5px, 1px);
+    }
+    /*Fin del responsive del NAVBAR*/
+
+
+    .container-home img{
+        width: 380px;
+        height: 500px;
+    }
+
+    .container-home .titulo-1{
+        font-size: 45px;
+    }
+
+    .container-home .titulo-2{
+        font-size: 50px;
+        width: 300px;
+    }
+    /*Fin del responsive del HOME*/
+
+    .container-skills{
+        margin-left: 130px;
+    }
+    /*Fin del Responsive de SKILLS*/
+
+
+    .container-services .container-cards .sect-cards{
+        justify-content: center;
+        display: grid;
+        grid-template-columns: repeat(2, 300px);
+    }
+    /*Fin del responsive SERVICES*/
+
+    .projects .container-cards .sect-card{
+        justify-content: center;
+        display: grid;
+        grid-template-columns: repeat(2, 300px);
+    }
+
+    .projects .container-cards .sect-card .card{
+        height: 400px;
+    }
+
+    .projects .container-cards .sect-card h1{
+        font-size: 20px;
+    }
+
+    .projects .container-cards .sect-card p{
+        font-size: 15px;
+    }
+
+    .projects .container-cards .sect-card img{
+        width: 240px;
+    }
+    /*Fin del responsive de PROJECTS*/
+
+
+    .footer .nav-footer{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .footer .nav-footer .nav-items li a{
+        font-size: 18px;
+        line-height: 40px;
+        display: flex;
+    }
+
+    .footer .redes{
+        display: none;
+    }
+}
+
+
+
+
+/************************/
+/*   RESPONSIVE 480PX   */
+/************************/
+@media(max-width: 480px){
+    .container-1{
+        margin-left: 20px;
+        margin-bottom: 50px;
+        width: 350px;
+    }
+
+    .container-home .container-1 .titulo-1{
+        font-size: 50px;
+    }
+
+    .container-home .container-1 .titulo-2{
+        font-size: 60px;
+    }
+
+    .container-home img{
+        display: none;
+    }
+    /*Fin del Responsive del HOME*/
+
+
+    .container-skills{
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 20px;
+        margin-left: 100px;
+    }
+    /*Fin del Responsive de SKILLS*/
+
+
+    .container-services .container-cards .sect-cards{
+        justify-content: center;
+        display: grid;
+        grid-template-columns: repeat(1, 350px);
+    }
+    /*Fin del responsive SERVICES*/
+
+
+    .projects .container-cards .sect-card{
+        justify-content: center;
+        display: grid;
+        grid-template-columns: repeat(1, 350px);
+    }
+
+    .projects .container-cards .sect-card h1{
+        font-size: 20px;
+    }
+
+    .projects .container-cards .sect-card p{
+        font-size: 15px;
+    }
+
+    .projects .container-cards .sect-card img{
+        width: 290px;
+    }
+
+    .projects .container-cards .expand{
+        font-size: 20px;
+        width: 150px;
+    }
+    /*Fin del responsive de PROJECTS*/
+
+
+    .contact .input_n{
+        width: 350px;
+        margin-left: 60px;
+        margin-bottom: 30px;
+    }
+
+    .contact .input_e{
+        width: 350px;
+        margin-left: 60px;
+    }
+
+    .contact .textarea{
+        width: 340px;
+        margin-left: 10px;
+    }
+
+    .contact .container-button .send{
+        width: 370px;
+        font-size: 20px;
+    }
+    /*Fin del responsive de CONTACT*/
+
+
+    .footer .nav-footer .nav-items li a{
+        font-size: 18px;
+        line-height: 30px;
+        display: flex;
+    }
+
+    .footer .redes{
+        display: none;
+    }
+}
+
+
+
+
+/************************/
+/*   RESPONSIVE 320PX   */
+/************************/
+@media(max-width: 320px){
+    .container-1{
+        margin-left: 20px;
+        margin-bottom: 50px;
+    }
+    .container-home .container-1 .titulo-1{
+        font-size: 30px;
+    }
+
+    .container-home .container-1 .titulo-2{
+        font-size: 40px;
+    }
+
+    .container-home .container-1 .info{
+        font-size: 18px;
+    }
+
+    .container-home .download{
+        font-size: 18px;
+        width: 150px;
+    }
+
+    .container-home img{
+        display: none;
+    }
+    /*Fin del Responsive del HOME*/
+
+
+    .container-skills{
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 20px;
+        margin-left: 40px;
+    }
+    /*Fin del Responsive de SKILLS*/
+
+
+    .container-services .container-cards .sect-cards{
+        justify-content: center;
+        display: grid;
+        grid-template-columns: repeat(1, 250px);
+    }
+    /*Fin del responsive SERVICES*/
+
+
+    .projects .container-cards .sect-card{
+        justify-content: center;
+        display: grid;
+        grid-template-columns: repeat(1, 250px);
+    }
+
+    .projects .container-cards .sect-card .card{
+        height: 420px;
+    }
+
+    .projects .container-cards .sect-card h1{
+        font-size: 20px;
+    }
+
+    .projects .container-cards .sect-card p{
+        font-size: 15px;
+    }
+
+    .projects .container-cards .sect-card img{
+        width: 200px;
+    }
+
+    .projects .container-cards .expand{
+        font-size: 20px;
+        width: 150px;
+    }
+    /*Fin del responsive de PROJECTS*/
+
+
+    .contact .input_n{
+        margin-left: 30px;
+        margin-bottom: 30px;
+    }
+
+    .contact .input_e{
+        width: 250px;
+        margin-left: 30px;
+    }
+
+    .contact .textarea{
+        width: 230px;
+        margin-left: 10px;
+    }
+
+    .contact .container-button .send{
+        width: 220px;
+        font-size: 20px;
+    }
+    /*Fin del responsive de CONTACT*/
+
+    .footer .nav-footer .nav-items li a{
+        font-size: 15px;
+        line-height: 30px;
+        display: flex;
+    }
+
+    .footer .redes{
+        display: none;
+    }
+}
